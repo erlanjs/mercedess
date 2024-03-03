@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Gle({ image, title, text, price, description }) {
+export default function Gle({ image, title, text, price, link }) {
   return (
     <div
       className="min-h-screen text-center"
@@ -26,12 +27,14 @@ export default function Gle({ image, title, text, price, description }) {
         >
           Доступно в магазине
         </button>
-        <button
-          className="bg-[#222222d5] text-white py-3 px-10 rounded-md font-medium mt-3 "
-          data-aos="fade-left"
-        >
-          Узнать больше
-        </button>
+        <Link to={link}>
+          <button
+            className="bg-[#222222d5] text-white py-3 px-10 rounded-md font-medium mt-3 "
+            data-aos="fade-left"
+          >
+            Узнать больше
+          </button>
+        </Link>
       </div>
       <p className="text-[#ffffffd3] text-lg mt-4" data-aos="zoom-in-up">
         {text}

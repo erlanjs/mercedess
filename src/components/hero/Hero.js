@@ -35,6 +35,9 @@ export default function Hero() {
             className="bg-white py-3 px-10 rounded-md font-medium mt-3"
             data-aos="fade-up"
             data-aos-delay="600"
+            onClick={() => {
+              window.scrollBy(0, 900);
+            }}
           >
             Выбрать автомобиль
           </button>
