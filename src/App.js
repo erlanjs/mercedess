@@ -21,10 +21,10 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/gle-amg" element={<GLeCar />} />
-        <Route path="/maybach" element={<Maybach />} />
+        <Route path="/car/:model" element={<GLeCar />} />
+        {/* <Route path="/maybach" element={<Maybach />} />
         <Route path="/g64-amg" element={<G64amg />} />
-        <Route path="/e-class-cabriolet" element={<Cabriolet />} />
+        <Route path="/e-class-cabriolet" element={<Cabriolet />} /> */}
       </Routes>
     </>
   );
